@@ -8,11 +8,14 @@ import {
   Button
 } from 'react-bootstrap';
 
+
+//functional component for navbar
 function MyNavbar() {
   return (
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">KITCHEN</Navbar.Brand>
       <Nav className="mr-auto">
+        {/*Should change or create below features */}
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#features">Features</Nav.Link>
         <Nav.Link href="#pricing">Pricing</Nav.Link>

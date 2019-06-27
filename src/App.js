@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import MyNavbar from './components/MyNavbar';
+import TruckMap from './components/TruckMap';
 
 
 function App() {
   return (
     <div>
       <MyNavbar/>
-      <div>Hello</div>
+      <TruckMap/>
     </div>
   );
 }
