@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Signup from './Signup';
 import {
   Navbar,
   Nav,
@@ -10,22 +11,29 @@ import {
 
 
 //functional component for navbar
-function MyNavbar() {
-  return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">KITCHEN</Navbar.Brand>
-      <Nav className="mr-auto">
-        {/*Should change or create below features */}
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
-      </Nav>
-      <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-info">Search</Button>
-      </Form>
-    </Navbar>
-  );
+class MyNavbar extends Component  {
+  
+  handleKey(eventKey){
+    
+  };
+
+  render() {
+    return (
+      <Navbar sticky="top" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">KITCHEN</Navbar.Brand>
+        <Nav className="mr-auto" onSelect={selectedKey => this.handleKey(selectedKey) }>
+          {/*Should change or create below features */}
+          <Nav.Link eventKey="signup" ><Signup/></Nav.Link>
+          <Nav.Link eventKey="login" >Log in</Nav.Link>
+        </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-info">Search</Button>
+        </Form>
+        
+      </Navbar>
+      );
+  }
 }
 
 export default MyNavbar;

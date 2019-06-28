@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import GoogleMapReact from 'google-map-react';
+import './TruckMap.css';
 
 //component for google maps API
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -16,7 +17,7 @@ class TruckMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '500px', width: '500px' }}>
+      <div className="home-map" style={{ height: '500px', width: '500px' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ 
             key: 'AIzaSyBqf1sVlCFf8v8CDXZfvCFcnxrXzSAFtmY',
