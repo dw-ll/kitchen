@@ -19,7 +19,7 @@ class TruckMap extends Component {
       <div style={{ height: '500px', width: '500px' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ 
-            key: 'AIzaSyBGY0evgv0q4NZOO8-7iaS5YJIQtPcs0IQ',
+            key: 'AIzaSyBqf1sVlCFf8v8CDXZfvCFcnxrXzSAFtmY',
             language: 'en'
           }}
           defaultCenter={this.props.center}
