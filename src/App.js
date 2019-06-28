@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
+import {GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react';
 import MyNavbar from './components/MyNavbar';
-import TruckMap from './components/TruckMap';
+import Map from './components/MapContainer';
 
 
 function App() {
   return (
     <div>
       <MyNavbar/>
-      <TruckMap/>
+      <Map/>
     </div>
   );
 }
