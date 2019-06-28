@@ -8,8 +8,8 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const MapStyles = {
   map:{
     position: 'absolute',
-    width: '100%',
-    height:'100%'
+    width: '50%',
+    height:'50%'
   }
 };
  
@@ -110,7 +110,7 @@ const MapStyles = {
 export default TruckMap;
 
 TruckMap.defaultProps = {
-  zoom: 11,
+  zoom: 17,
   initialCenter: {
     lat: -1.2884,
     lng: 36.8233

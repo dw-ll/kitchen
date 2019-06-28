@@ -8,8 +8,10 @@ import Map from './components/MapContainer';
 function App() {
   return (
     <div>
-      <MyNavbar/>
-      <Map/>
+      <MyNavbar />
+      <div style={{ height: "500px", width: "500px" }}>
+        <Map />
+      </div>
     </div>
   );
 }
