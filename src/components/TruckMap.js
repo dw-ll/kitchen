@@ -1,41 +1,4 @@
 import React, {Component} from 'react';
-<<<<<<< HEAD
-import GoogleMapReact from 'google-map-react';
-import './TruckMap.css';
-
-//component for google maps API
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
- 
-class TruckMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
-  };
- 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div className="home-map" style={{ height: '500px', width: '500px' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ 
-            key: 'AIzaSyBqf1sVlCFf8v8CDXZfvCFcnxrXzSAFtmY',
-            language: 'en'
-          }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text="My Marker"
-          />
-        </GoogleMapReact>
-      </div>
-    );
-=======
 import ReactDOM from 'react-dom';
 
 //component for google maps API
@@ -46,7 +9,6 @@ const MapStyles = {
     position: 'absolute',
     width: '50%',
     height:'50%'
->>>>>>> 701d11cf17ca5ffb5216215382228baac54b6b91
   }
 };
  
